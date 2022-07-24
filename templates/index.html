@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <center>
+      <big style="font-size:50px;font-weight:bold; ">INSURANCE PREMIUM PREDICTION </big>
+        <hr>
+         <form action ="{{url_for('predict')}}" method ="post">
+       <b><h1>AGE OF THE PERSON : <input type="number" name='a' placeholder = "Enter your age" required = "required">
+             <label for="Sex">SEX:</label>
+            <select id="Sex" name="sex" required = "required">
+                <option value="" disabled selected>Select option </option>
+             <option value=1>Male</option><option value=0>Female</option>
+            </select><br><br>
+            BODY MASS INDEX (BMI) : <input type="number" name='c' placeholder = "Ex : 21.0" required = "required"><br><br>
+            CHILDREN : <input type="number" name='d' placeholder = "How many kids you have" required = "required"> <br><br>
+             <label for="Smoker">Smoker:</label>
+                <select id="Smoker" name="smoker"  placeholder = "select" required = "required">
+                 <option value="" disabled selected>Select option </option><option value=1>Yes</option><option value=0 >No</option>
+             </select>
+                <label for="Smoker">REGION:</label>
+                <select id="Region" name="region"  placeholder = "Select" required = "required">
+                 <option value="" disabled selected>Select option </option>
+                    <option value=0>South - West</option>
+                    <option value=1 >South - East</option>
+                    <option value=2 >North - West</option>
+                    <option value=3 >North - East</option>
+             </select></h1> <br><br><br>
+       </b>
+        <h1>  <button id="sub" type="submit">Calculate pemium</button></h1>
+      </form>
+    <br><br><h1>{{prediction_text}}</h1>
+
+    </center>
+    <hr>
+   <marquee>CREATED BY:ARINDAM GHOSH || CONTACT:7980644358 </marquee>
+   <hr>
+          </body>
+        </html>
