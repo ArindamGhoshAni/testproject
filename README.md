@@ -12,4 +12,4 @@ git commit -m "message"
 
 git push origin main
 
-
+python setup.py install

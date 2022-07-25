@@ -4,3 +4,5 @@ numpy
 jsonify
 requests
 scikit-learn
+pandas
+-e .
